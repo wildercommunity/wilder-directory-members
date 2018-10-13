@@ -1,16 +1,15 @@
 <template>
   <div id="app">
     <v-app id="inspire">
-        <v-layout >
-            <v-flex
-                    xs2 offset-xs5
-                    md2 offset-md5
-                    lg2 offset-lg5>
+        <v-layout
+                <v-flex
+                xs2 offset-xs5
+                md2 offset-md5
+                lg2 offset-lg5>
 
-                <img :src="logoSrc" style="width:100%"/>
-            </v-flex>
+            <img :src="logoSrc" style="width:100%"/>
+                    </v-flex>
         </v-layout>
-
         <v-layout v-if="loading" >
           <v-flex xs12 text-xs-center>
             <v-progress-circular

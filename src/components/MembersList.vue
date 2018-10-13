@@ -1,6 +1,7 @@
 <template>
   <div v-if="!loading">
     <v-layout row wrap>
+
         <v-flex xs12 sm6 md4 v-for="user in users">
       <MemberCard  :user="user"/>
       </v-flex>
